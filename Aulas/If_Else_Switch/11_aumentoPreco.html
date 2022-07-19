@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const preco = Number(prompt("Informe o valor do produto:"))
+        let porcentAumento = 0
+        let aumento = 0
+        let precofinal = preco + aumento
+
+        if (preco <= 280) {
+            porcentAumento = 20
+            aumento = (porcentAumento / 100 * preco)
+            precofinal = (preco + aumento)
+
+        } else if (preco > 280 && preco <= 700) {
+            porcentAumento = 15
+            aumento = (porcentAumento / 100 * preco)
+            precofinal = (preco + aumento)
+        } else if (preco > 700 && preco <= 1500) {
+            porcentAumento = 10
+            aumento = (porcentAumento / 100 * preco)
+            precofinal = (preco + aumento)
+
+        } else {
+            porcentAumento = 5
+            aumento = (porcentAumento / 100 * preco)
+            precofinal = (preco + aumento)
+        }
+        document.write(`Aumento:  R$${aumento.toFixed(2)}</br>`)
+        document.write(`Valor final: R$${precofinal.toFixed(2)}</br>`)
+        document.write(`Porcentagem de aumento: ${porcentAumento.toFixed(2)}% `)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<script>
+    // Recebe quanto ganha por hora e quantas horas trabalho ao mês, e retorna o salário líquido.
+    //Descontos:
+    //- INSS é 8% do salário bruto
+    //- IR é 11% do salário bruto
+    //- Sindicato é 5% do salário bruto.
+
+    // Entrada
+    const ganhoPorHora = Number(prompt("Informe o ganho por hora :"))
+    const horasPorMes = Number(prompt("Informe quantas horas de trabalho por mês: "))
+
+    // Processamento
+    const salarioBruto = ganhoPorHora * horasPorMes
+    const porcentDesconto = 0.08 + 0.11 + 0.05
+    const salarioFinal = salarioBruto - porcentDesconto * salarioBruto
+
+    // Saída 
+    document.write(`<br/>Salário Bruto: R$${salarioBruto.toFixed(2)}`)
+    document.write(`<br/>Salário Liquido: R$${salarioFinal.toFixed(2)}`)
+</script>

@@ -1,0 +1,37 @@
+<script>
+    /*
+    //PROBLEMA
+    Faça um script para um caixa eletrônico. O script deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas. As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais. O script não deve se preocupar com a quantidade de notas existentes na máquina.
+
+    Exemplo: Para sacar a quantia de 256 reais, o script fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
+    Exemplo: Para sacar a quantia de 399 reais, o script fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
+    */
+
+    //ENTRADA
+    let valor = parseInt(prompt("informe o valor: "))
+
+    /*let notaCem = 0
+    let notaCinquenta = 0
+    let notaDez = 0
+    let notaCinco = 0
+    let moeda = 0*/
+    
+    
+    //PROCESSAMENTO
+    if (valor < 10 || valor > 600){ document.write("O valor tem que ser entre 10 a 600 reais")}
+    else{
+        const notaCem = Math.floor(valor / 100)
+        valor = valor % 100
+        const notaCinquenta = Math.floor(valor / 50)
+        valor = valor % 50
+        const notaDez = Math.floor(valor / 10)
+        valor = valor % 10
+        const notaCinco = Math.floor(valor / 5)
+        moeda = valor % 5
+        
+        document.write(`Nota(s)  de cem: ${Math.floor(notaCem)} </br>Nota(s) de cinquenta: ${Math.floor(notaCinquenta)} </br>Nota(s) de dez: ${Math.floor(notaDez)} </br>Nota(s) de cinco: ${Math.floor(notaCinco)} </br>Nota(s) de um: ${Math.floor(moeda)}`)
+}
+    //SAÍDA
+    //document.write(`Nota(s)  de cem: ${Math.floor(notaCem)} </br>Nota(s) de cinquenta: ${Math.floor(notaCinquenta)} </br>Nota(s) de dez: ${Math.floor(notaDez)} </br>Nota(s) de cinco: ${Math.floor(notaCinco)} </br>Nota(s) de um: ${Math.floor(moeda)}`)
+
+</script>

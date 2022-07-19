@@ -1,0 +1,15 @@
+<script>
+    // Recebe uma data em dias com horas, minutos e segundos, e retorna a data em segundos.
+
+    // Entrada
+    const dias = Number(prompt("Informe os dias: "))
+    const horas = Number(prompt("Informe os horas: "))
+    const minutos = Number(prompt("Informe os minutos: "))
+    const segundos = Number(prompt("Informe os segundos: ")) 
+
+    // Processament
+    const totalSegundos = (segundos + minutos * 60 + horas * 60 * 60 + dias * 24 * 60 * 60)
+
+    // Saída
+    document.write(`O resultado é: ${totalSegundos} Segundo(s)`)
+</script>

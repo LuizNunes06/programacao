@@ -1,0 +1,40 @@
+<script>
+  /*
+    //PROBLEMA
+    Faça um script que leia um número inteiro menor que 1000 e imprima a quantidade de centenas, dezenas e unidades do mesmo.
+    Observando os termos no plural a colocação do "e", da vírgula entre outros.
+    
+    Exemplo:
+    326 = 3 centenas, 2 dezenas e 6 unidades
+    12 = 1 dezena e 2 unidades 
+    Testar com: 326, 300, 100, 320, 310, 305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7 e 16
+    */
+
+  //ENTRADA
+
+  const valor = parseInt(prompt("Informe um valor: "));
+
+  let centenas = 0;
+  let dezenas = 0;
+  let unidades = 0;
+  let extenso = "";
+  //PROCESSAMENTO
+
+  if (valor < 1000) {
+    centenas = Math.floor(valor / 100);
+    dezenas = Math.floor((valor % 100) / 10);
+    unidades = Math.floor((valor % 100) % 10);
+
+    if (centenas > 1) extenso = centenas + " Centenas, ";
+    else extenso = centenas + " Centena, ";
+    if (dezenas > 1) extenso = extenso + dezenas + " Dezenas e ";
+    else extenso = extenso + dezenas + " Dezena e ";
+    if (unidades > 1) extenso = extenso + unidades + " Unidades.";
+    else extenso = extenso + unidades + " Unidade.";
+  } else {
+    document.write(`O valor tem que ser menor que 1000.`);
+  }
+
+  //SAÍDA
+  document.write(extenso);
+</script>

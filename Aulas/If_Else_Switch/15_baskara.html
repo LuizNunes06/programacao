@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+	
+		let valorA = prompt("Informe o valor de A:");
+		let valorB = prompt("Informe o valor de B:");
+		let valorC = prompt("Informe o valor de C:");
+		let coeficiente1;
+		let coeficiente2;
+
+		let delta = (valorB * valorB) - 4 * valorA * valorC;
+
+		document.write("Valor de Delta => " + delta + "<br/><br/>");
+
+		if(delta < 0){
+		  document.write("Para Delta negativo, não existem raízes reais. <br/>");  
+		} else{
+		  
+		  document.write("Para Delta positivo, raízes diferentes: <br/>");  
+		  
+		  coeficiente1 = (-valorB + Math.sqrt(delta)) / (2 * valorA);
+		  coeficiente2 = (-valorB - Math.sqrt(delta)) / (2 * valorA);
+		  
+		  document.write("x' = " + coeficiente1 + "<br/>");
+		  document.write("x'' = " + coeficiente2 + "<br/>");
+		}
+
+</script>
+</body>
+</html>

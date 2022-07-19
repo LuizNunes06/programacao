@@ -1,0 +1,20 @@
+<script>
+    // Leia um número inteiro menor que 1000 e devolva a quantidade de centenas, dezenas e unidades do mesmo. Obs.: não utilize operações com strings.
+
+    // Entrada
+    let valor = Number(prompt("Informe um número: "))
+    
+    // Processamento
+    if (valor < 1000){
+        const centenas = Math.floor(valor/10)
+        valor = centenas % valor
+        const dezenas = Math.floor(centenas / 10)
+        const unidades = valor % 10
+
+        document.write(`Centenas: ${centenas.toFixed(0)} Dezenas: ${dezenas-centenas.toFixed(0)} Unidades: ${unidades}`)
+    }
+    else{
+        document.write(`O valor tem que ser menor que 1000`)
+    }
+    
+</script>

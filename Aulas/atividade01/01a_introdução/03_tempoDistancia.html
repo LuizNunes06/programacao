@@ -1,0 +1,18 @@
+<script>
+    // Recebe uma distância e a velocidade de movimentação, e retorna as horas que seriam gastas para percorrer em linha reta.
+
+    // Entrada
+    const distancia = Number(prompt("Informe a distancia (Km): "))
+    const velocidade = Number(prompt("Informe a velocidade (Km/h): "))
+
+    // Processamento
+    const horas_percorridas = distancia / velocidade
+    const minutos = horas_percorridas * 60
+    //const minFinal = minutos % 60
+    const minFinal = minutos - (horas_percorridas * 60)
+
+    const horasFinal = Math.floor(minutos / 60)
+
+    // Saída
+    document.write(`Seriam gastas ${horasFinal}h${minFinal}m para percorrer ${distancia} Kilometro(s)`)
+</script>

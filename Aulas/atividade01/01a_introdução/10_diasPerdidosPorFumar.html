@@ -1,0 +1,21 @@
+
+    <script>
+        // Recebe uma quantidade de cigarros fumados por dia e a quantidade de anos que fuma, e retorna o total de dias perdidos, sabendo que cada cigarro reduz a vida em 10 minutos.
+
+    // Entrada
+    const cigarrosPorDia = parseInt(prompt("Informe a Quantidade de cigarros fumados por dia: "))
+    const anosDeFumo = parseInt(prompt("Informe a quantidade de anos que fuma:"))
+
+    // Processamento
+    const diasPerdidos = (((anosDeFumo * 365) * cigarrosPorDia * 10) / 60 / 24)
+    const horasPerdidas = diasPerdidos * 24
+    const minutosPerdidos = horasPerdidas * 60 
+
+    // Saída
+    document.write(`Dias perdidos: ${diasPerdidos.toFixed(2)}</br>`)
+    document.write(`Horas pedidas: ${horasPerdidas.toFixed(2)}</br>`)
+    document.write(`Minutos Perdidos: ${minutosPerdidos.toFixed(2)}`)
+    
+    //mostrar meses
+    </script>
+    

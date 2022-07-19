@@ -1,0 +1,16 @@
+<script>
+    // Receba o número de ovos e devolva a quantidade de dúzias correspondente. Considere sempre dúzias cheias, arredondando pra cima se necessário.
+
+    // Entrada
+    let qtdOvos = Number(prompt("Informe a quantidade de ovos: "))
+
+    // Processamento
+    let duzias = Math.floor(qtdOvos / 12)
+    const resto = qtdOvos % 12
+    if (resto > 9)
+        duzias = duzias + 1
+        
+
+    // Saída
+    document.write(`Duzias: ${duzias}`)
+</script>
