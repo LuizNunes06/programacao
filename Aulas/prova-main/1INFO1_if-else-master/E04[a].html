@@ -1,0 +1,28 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    //Problema
+    /*
+    Faça um script que peça para o usuário informar a quantidade de litros de combustível utilizado semanalmente para ir para o trabalho, assim como o preço do litro do combustível.
+    Se o consumo for até 40 litros (inclusive), o programa mostrará o custo total e indicará que o percurso é curto.
+    Se o consumo for até 60 litros (inclusive), o programa mostrará o custo total e indicará que o percurso é médio.
+    Se o consumo ultrapassar 60 litros, o programa mostrará o custo total e indicará que o percurso é longo.
+    */
+
+    //Entrada
+    const litros = Number(prompt("Informe a quantidade de litros utilizados semanalmente: "))
+    const precoLitros = Number(prompt("Informe o preço do litro de combustível: "))
+
+    //Processamento
+    const precoCombustivel = precoLitros * litros
+
+    if (litros <= 40){
+        document.write(`Custo total: ${precoCombustivel}</br>O percurso é curto.`)
+    }else if (litros <= 60){
+        document.write(`Custo total: ${precoCombustivel}</br>O percurso é médio.`)
+    }else{
+        document.write(`Custo total: ${precoCombustivel}</br>O percurso é longo.`)
+    }
+    //Saída
+
+    
+</script>
