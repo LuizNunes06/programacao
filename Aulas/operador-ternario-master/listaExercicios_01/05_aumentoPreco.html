@@ -8,10 +8,10 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
+    let preco = Number(prompt("Informe o valor do produto: "));
 
     //Processamento
-
+    (preco  <= 280) ? alert (`Novo preço: ${preco*0.20 + preco}`):(preco  <= 700) ? alert (`Novo preço: ${preco*0.15 + preco}`):(preco  <= 1500) ? alert (`Novo preço: ${preco*0.10 + preco}`):alert (`Novo preço: ${preco*0.05 + preco}`);
     
     //Saída
 

@@ -8,10 +8,11 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
+    const horasTrabalhadas = parseInt(prompt("Informe quantas horas você trabalha por semana: "));
+    const ganhoHora = Number(prompt("Informe o quanto você ganha por hora: "));
 
     //Processamento
-
+    (horasTrabalhadas <= 45)? alert(`Salário final: ${ganhoHora * horasTrabalhadas} \nGanho por hora: ${ganhoHora}`): (horasTrabalhadas <= 60)? alert(`Salário final: ${(ganhoHora * horasTrabalhadas)+(ganhoHora * horasTrabalhadas)* 0.20  } \nGanho por hora: ${ganhoHora + ganhoHora * 0.20}`) : alert(`Salário final: ${(ganhoHora * horasTrabalhadas)+(ganhoHora * horasTrabalhadas)* 0.30  } \nGanho por hora: ${ganhoHora + ganhoHora * 0.30}`) ;
     
     //Saída
 

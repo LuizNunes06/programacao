@@ -6,10 +6,13 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
+    const precoLtCombustivel = Number(prompt("Informe o valor do litro de combustível: "));
+    let gastoCombustivel = Number(prompt("Informe o combustível gasto para ir ao seu trabalho: "));
+    const passsagem = Number(prompt("Informe o valor da passagem: "));
 
     //Processamento
-
+    gastoCombustivel = precoLtCombustivel * gastoCombustivel;
+    (gastoCombustivel > passsagem)? alert("Transporte público é mais barato."):(passsagem > gastoCombustivel)? alert("Ir de carro tem menos gasto."): alert("O gasto é o mesmo.");
     
     //Saída
 
