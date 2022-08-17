@@ -10,11 +10,16 @@
     // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-    
-
+    const agua = Number(prompt("Gasto com água:"));
+    const energia = Number(prompt("Gasto com energia:"));
+    const telefone = Number(prompt("Gasto com telefone:"));
+    const supermercado = Number(prompt("Gasto com Supermercado:"));
+    const salario = Number(prompt("Seu salário: "));
     //Processamento
-
+    const gasto = agua + energia + telefone + supermercado;
     
+    (gasto > salario)? alert(`Seu gasto é maior que o salário \nFalta: ${gasto - salario}`):(salario > gasto)? alert(`Você consegue pagar as contas \n Sobra: ${salario - gasto}`): alert(`Voçê rebebe o mesmo que ganha \n
+    Sobra: ${salario - gasto}`)
     //Saída
     
 </script>
