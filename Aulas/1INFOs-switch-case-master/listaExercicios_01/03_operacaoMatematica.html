@@ -7,11 +7,53 @@
     */
 
     //ENTRADA
-
+    const num1 = Number(prompt("Informe um número: "))
+    const num2 = Number(prompt("Informe outro número: "))
+    const operacao = prompt("Informe a operação matemática desejada (+ | - | * | / ): ")
 
     //PROCESSAMENTO
+    let resultado
+    let extenso = "Resultado da operação: "
+    switch (operacao) {
+        case '+':
+            resultado = num1 + num2
+            break
+        case '-':
+            resultado = num1 - num2
+            break
+        case '*':
+            resultado = num1 * num2
+            break
+        case '/':
+            resultado = num1 / num2
+            break
+        default:
+            alert("Operação inválida")
+    }
+    extenso = extenso + resultado
+    switch (resultado >= 0) {
+        case true:
+            extenso = extenso + "\nPositivo"
+            break
+        case false:
+            extenso = extenso + "\nNegativo"
+            break
+    }
+    switch (resultado % 2) {
+        case 0:
+            extenso = extenso + "\nPar"
+            break
+        case 1:
+            extenso = extenso + "\nÍmpar"
+    }
+    switch (Number.isInteger(resultado)) {
+        case true:
+            extenso = extenso + "\nInteiro"
+            break
+        case false:
+            extenso = extenso + "\nDecimal"
+    }
 
-    
     //SAÍDA
-
+    alert(extenso)
 </script>

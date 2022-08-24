@@ -8,11 +8,28 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
-
-    
+    const porte = prompt("Informe o porte do seu cão(pequeno | medio | grande)").toLowerCase()
+    let idade = Number(prompt("Informe a idadedo seu cão: "))
     // PROCESSAMENTO
+    let estenso = "Idade do seu cão: "
+    switch (porte) {
+        case 'pequeno':
+            idade = idade * 5
+            estenso = estenso + idade
+            break
+        case 'medio':
+            idade = idade * 6
+            estenso = estenso + idade
+            break
+        case 'grande':
+            idade = idade * 7
+            estenso = estenso + idade
+            break
+        default:
+            estenso = 'porte está incorreto'
+    }
 
-    
     // SAÍDA
+    alert(estenso)
 
-    </script>
+</script>
