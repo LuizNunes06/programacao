@@ -1,0 +1,29 @@
+<script>
+    //Problema: Ao usuário logar em uma aplicação, ele deverá informar se é Administrador (A), Gerente (G) ou Usuário Comum (U).
+    //Usando SWITCH...CASE, apresente a seguinte mensagem:
+    //Se Administrador: Bom dia, Senhor!
+    //Se Gerente: Bom dia, Chefe!
+    //Se Usuário Comum: Bom dia!
+
+    //ENTRADA
+    const usuario = prompt("Você é  Administrador (A), Gerente (G) ou Usuário Comum (U) ?").toLowerCase()
+
+    //PROCESSAMENTO
+    switch(usuario){
+        case 'a': 
+            document.write("Bom dia, Senhor!")
+            break
+        case 'g': 
+            document.write("Bom dia, Chefe!")
+            break
+        case 'u': 
+            document.write("Bom dia!")
+            break
+        default:
+            document.write("Inválido!")
+    }
+
+    //SAÍDA
+
+
+</script>

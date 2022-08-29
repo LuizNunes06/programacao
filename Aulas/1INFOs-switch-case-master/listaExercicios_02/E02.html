@@ -1,0 +1,17 @@
+<script>
+    //Problema: Ao usuário logar em uma aplicação, ele deverá informar se é Administrador (A), Gerente (G) ou Usuário Comum (U).
+    //Usando OPERADOR TERNÁRIO, apresente a seguinte mensagem:
+    //Se Administrador: Bom dia, Senhor!
+    //Se Gerente: Bom dia, Chefe!
+    //Se Usuário Comum: Bom dia!
+
+    //ENTRADA
+    const usuario = prompt("Você é  Administrador (A), Gerente (G) ou Usuário Comum (U) ?").toLowerCase();
+
+    //PROCESSAMENTO
+    (usuario == "a")? document.write("Bom dia, Senhor!"):(usuario== "g")? document.write("Bom dia, Chefe!"):(usuario == "u")? document.write("Bom dia!"): document.write("Inválido!");
+
+    //SAÍDA
+
+
+</script>
