@@ -8,9 +8,71 @@
     const mes = parseInt(prompt("Informe o mês atual (de 1 a 12):"))
     const hemisferio = prompt("Em qual hemisfério você está ? (Sul | Norte):").toLowerCase()
     //PROCESSAMENTO
-    let estenso =  "Estação atual:  "
+    let extenso =  "Estação atual:  "
 
-    
+    switch (hemisferio){
+        case 'sul':
+            switch(mes){
+                case 1: 
+                case 2:
+                case 3: 
+                extenso = extenso + "verão"
+                break
+            }
+            switch(mes){
+                case 4: 
+                case 5:
+                case 6: 
+                extenso = extenso + "outono"
+                break
+            }
+            switch(mes){
+                case 7: 
+                case 8:
+                case 9: 
+                extenso = extenso + "inverno"
+                break
+            }
+            switch(mes){
+                case 10: 
+                case 11:
+                case 12: 
+                extenso = extenso + "primavera"
+                break
+            }
+    }
+    switch (hemisferio){
+        case 'norte':
+            switch(mes){
+                case 1: 
+                case 2:
+                case 3: 
+                extenso = extenso + "inverno"
+                break
+            }
+            switch(mes){
+                case 4: 
+                case 5:
+                case 6: 
+                extenso = extenso + "primavera"
+                break
+            }
+            switch(mes){
+                case 7: 
+                case 8:
+                case 9: 
+                extenso = extenso + "verão"
+                break
+            }
+            switch(mes){
+                case 10: 
+                case 11:
+                case 12: 
+                extenso = extenso + "outono"
+                break
+            }
+    }
     //SAÍDA
+    alert(extenso)
 
 </script>
