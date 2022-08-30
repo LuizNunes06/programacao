@@ -1,0 +1,21 @@
+<script>
+    //USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+    
+    //PROBLEMA: Média do aluno
+    //Peça para o Professor informar as notas dos três trimestres do aluno e considere o seguinte cenário:
+    //Se a média das três notas do aluno for até 4, o programa deverá considerar que o aluno está REPROVADO
+    //Se a média das três notas do aluno for até 6, o programa deverá considerar que o aluno está em EXAME
+    //Se a média das três notas do aluno for acima de 6, o programa deverá considerar que o aluno está APROVADO
+    //Apresente a situação final do aluno
+
+    //ENTRADA
+    const nota1 = Number(prompt("Nota do primeiro trimestre: "));
+    const nota2 = Number(prompt("Nota do segundo trimestre: "));
+    const nota3 = Number(prompt("Nota do terceiro trimestre: "));
+    //PROCESSAMENTO
+    const media = (nota1 + nota2 + nota3) / 3;
+
+    (media >= 0 && media < 4)? alert(`REPROVADO`):(media >= 4 && media < 6)? alert(`EXAME`):alert (`APROVADO`)
+    //SAÍDA
+
+</script>
