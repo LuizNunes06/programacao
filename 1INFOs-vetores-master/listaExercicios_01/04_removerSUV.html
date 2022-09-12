@@ -7,12 +7,15 @@
 
     //ENTRADA
     const carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    const carroTirar = prompt(`Informe o carro que deseja REMOVER da lista (${carrosSUV})`).toLowerCase();
-    let novosCarrosSUV = []
+    const carroTirar = prompt(`Informe o carro que deseja REMOVER da lista (${carrosSUV})`);
+
     //PROCESSAMENTO
-    novosCarrosSUV = novosCarrosSUV.indexOf(carroTirar)
+    const antiga = carrosSUV.join(", ");
+    let posicao = carrosSUV.indexOf(carroTirar);
+    carrosSUV.splice(posicao, 1);
+
     
 
     //SAÍDA
-    alert(alert(`Lista antiga: ${carrosSUV}\nLista Nova:${novosCarrosSUV}`))
+    alert(`Lista antiga: ${antiga}\nLista Nova: ${carrosSUV.join(", ")}`)
 </script>

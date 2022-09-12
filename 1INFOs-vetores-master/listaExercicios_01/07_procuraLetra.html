@@ -6,11 +6,14 @@
     //Apresente para o usuário se a LETRA que ele quer procurar existe ou não na palavra digitada e qual a primeira posição da LETRA na PALAVRA.
 
     //ENTRADA
-
+    const palavra = prompt("Informe uma palavra:");
+    const letra = prompt("Informe uma letra:");
 
     //PROCESSAMENTO
-
+    letras = Array.from(palavra);
+    posicao = letras.indexOf(letra);
 
     //SAÍDA
+    (posicao != -1 )? alert(`${posicao}`):alert("Esta letra não existe na palavra")
 
 </script>
