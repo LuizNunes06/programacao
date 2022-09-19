@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let porte = prompt("Qual o porte do seu cachorro ? ")
+        const anos = Number(prompt("A idade do seu cão: "))
+        let fator = 0
+        let idadecao = 0
+        if (porte.toLowerCase() == "pequeno") {
+            fator = 5
+            idadecao = anos * fator
+        } else if (porte.toLowerCase() == "medio") {
+            fator = 6
+            idadecao = anos * fator
+        } else {
+            fator = 7
+            idadecao = anos * fator
+        }
+        document.write(`Idade do seu cão: ${idadecao}`)
+    </script>
+</body>
+
+</html>

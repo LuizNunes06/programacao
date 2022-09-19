@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const nota = Number(prompt("inoforme a nota:"))
+
+        if (nota < 6) {
+
+            document.write(`nota em conceito: E</br>`)
+        } else if (nota < 7) {
+
+            document.write(`nota em conceito: D</br>`)
+        } else if (nota < 8) {
+
+            document.write(`nota em conceito: C</br>`)
+        } else if (nota < 9) {
+
+            document.write(`nota em conceito: </br>`)
+        } else if (nota <= 10) {
+
+            document.write(`nota em conceito: A</br>`)
+        } else {
+            document.write(`A nota tem que ser entre 0 a 10`)
+        }
+        document.write(`nota: ${nota}`)
+
+
+    </script>
+</body>
+
+</html>

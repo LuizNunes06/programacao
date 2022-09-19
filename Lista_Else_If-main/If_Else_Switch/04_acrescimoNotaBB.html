@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const notaLittleBro = Number(prompt("Nota do little brother: "));
+        const notaBigBro = Number(prompt("Nota do big brother: "));
+        const adicional = (notaBigBro - notaLittleBro) / 4;
+
+        if (notaBigBro > notaLittleBro) {
+            document.write("O aluno conseguiu aumentar sua nota</br>");
+            document.write(`O aumento foi de: ${adicional.toFixed(2)}`);
+        } else {
+            document.write("O aluno não conseguiu aumentar a nota");
+        }
+    </script>
+</body>
+
+</html>
