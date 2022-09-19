@@ -1,0 +1,18 @@
+<script>
+const nome1 = prompt("Informe um nome: ");
+const nome2 = prompt("Informe um nome: ");
+const nome3 = prompt("Informe um nome: ");
+const nome4 = prompt("Informe um nome: ");
+
+let listaNomes = [nome1, nome2, nome3, nome4];
+listaNomes.sort();
+    
+    for (nome of listaNomes){
+        alertaNome(`${nome}</br>`);
+    }
+
+    function alertaNome(nomePessoa){
+        alert(nomePessoa)
+    }
+
+</script>
