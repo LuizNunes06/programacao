@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nota = Number(prompt("Média anual do aluno: "))
+        const faltas = Number(prompt("Faltas do aluno: "))
+        const aulas = Number(prompt("Aulas ministradas da matéria: "))
+
+        const portcentFaltas = faltas / aulas * 100
+        const porcentFreq = (aulas - faltas) / aulas * 100
+        const media = 7
+
+        if (portcentFaltas >= 25){
+            document.write("O aluno está reprovado.</br>")
+            document.write("Motivo: Faltas excessivas")
+        }else if(nota < 7 && porcentFreq >= 75){
+            document.write("O aluno está no exame final.</br>")
+            document.write("Motivo: Notas abaixo da média")
+        }else{
+            document.write("O aluno está aprovado")
+        }
+    </script>
+</body>
+</html>
