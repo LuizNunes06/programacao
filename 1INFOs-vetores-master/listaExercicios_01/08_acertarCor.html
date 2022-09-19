@@ -11,7 +11,7 @@
 
     //ENTRADA
     const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
-    const escolha = prompt("Escolha uma cor (azul, amarelo, verde, branco, preto, marrom, cinza)");
+    const escolha = prompt("Escolha uma cor (azul, amarelo, verde, branco, preto, marrom, cinza)").trim().toLowerCase();
 
     //PROCESSAMENTO
     const corCerta = Math.floor(Math.random() * 7);
