@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    const listaDeNomes = ["Alberto", "Maria", "Rafael", "Eloisa", "João", "Amanda", "Eduardo"]
+    let listaNomesA = []
+    let listaOutrosNomes = []
+for(nome of listaDeNomes){
+    if (nome.charAt(0) === "A"){
+        listaNomesA.push(nome);
+    }else{
+        listaOutrosNomes.push(nome);
+    }
+}
+listaOutrosNomes.sort();
+listaNomesA.sort();
+alert(`Nomes com inicial "A" : ${listaNomesA. join(", ")}\nOutros nomes: ${listaOutrosNomes.join(", ")}`)
+</script>
