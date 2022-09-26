@@ -3,7 +3,8 @@
     const listaDeNomes = ["Alberto", "Maria", "Rafael", "Eloisa", "João", "Amanda", "Eduardo"]
     let listaNomesA = []
     let listaOutrosNomes = []
-for(nome of listaDeNomes){
+for(let nome of listaDeNomes){
+    document.write(`<li>${nome}</li>`)
     if (nome.charAt(0) === "A"){
         listaNomesA.push(nome);
     }else{

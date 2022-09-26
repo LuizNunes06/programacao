@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<script>
+    const numero = parseInt(prompt("Informe um valor:"))
+    let fatoracao = 1
+    let conta = []
+    for (let index = 1; index < numero + 1; index++) {
+        conta.push(index)
+        fatoracao = index * fatoracao
+    }
+    document.write(`${conta.reverse().join(" x ")} </br> ${fatoracao}`)
+</script>
