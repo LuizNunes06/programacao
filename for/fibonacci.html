@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<script>
+    let fibonacci = [0,1];
+    const numero = parseInt(prompt("Quantos números terá na lista ?"))
+
+for (let index = 2; index <= numero-1; index++) {
+
+    soma = fibonacci[index-2] + fibonacci[index-1]
+    fibonacci.push(soma)
+}
+document.write(fibonacci.join(", "))
+</script>

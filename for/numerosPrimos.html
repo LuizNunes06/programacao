@@ -1,9 +1,12 @@
 <meta charset="UTF-8">
 <script>
-    let listaNum = []
-for (let index = 1; index < 9; index++) {
-    let numero = parseInt(prompt("infome um valor:"))
-    listaNum.push(numero)
+    let divisor = 0
+    const numero = parseInt(prompt("infome um valor:"))
+
+    for (let index = 0; index <= numero; index++) {
+        if (numero % index == 0) divisor++
     }
-    document.write(listaNum)
+    (divisor == 2) ? document.write(`O número ${numero} é primo.`) : document.write(`O número ${numero} não é primo.`)
+
+    document.write(`Numeros primos: ${numPrimos}</br>Numeros não primos: ${resto}`)
 </script>
