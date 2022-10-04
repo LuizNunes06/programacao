@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-
-
+    qtdNotas = parseInt(prompt("Informe quantas o aluno teve: "))
+    let media = 0
+    let soma = 0
     //PROCESSAMENTO
-
-
+    for (let index = 1; index < qtdNotas + 1; index++) {
+        let nota = Number(prompt(`Informe a nota ${index}: `))
+        soma = soma + nota 
+        media = soma / qtdNotas
+    }
     //SAÍDA
-
+    document.write(`A média do aluno é: ${media}`)
 </script>

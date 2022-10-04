@@ -7,11 +7,16 @@
     */
 
     //ENTRADA
-
+    
+    let numeros = [];
+    for (let index = 0; index <= 5; index++) {
+        numeros.push(Number(prompt("Informe um número:")));
+    }
 
     //PROCESSAMENTO
 
-
     //SAÍDA
+
+    document.write(`Números: ${numeros.join(", ")}</br>Maior número: ${numeros.reverse((a, b) => a - b)[0]}`);
 
 </script>

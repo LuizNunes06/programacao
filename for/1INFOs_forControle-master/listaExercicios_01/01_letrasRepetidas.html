@@ -10,11 +10,13 @@
     */
 
     //ENTRADA
-
-
+    let listaDeNumeros = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let listaFinal = [];
     //PROCESSAMENTO
-
-
+    for (let index = 0; index < listaDeNumeros.length - 1; index++) {
+        if (listaFinal.indexOf(listaDeNumeros[index].toLowerCase()) == -1) listaFinal.push(listaDeNumeros[index].toLowerCase());
+    }
     //SAÍDA
+    document.write(listaFinal.join(", "));
 
 </script>

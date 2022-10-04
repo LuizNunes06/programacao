@@ -7,13 +7,15 @@
 
     //ENTRADA
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
-    let masc = []
-    let fem = []
+    let masc = [];
+    let fem = [];
     //PROCESSAMENTO
-    for (let name of listaDeNomes){
-        
+    for (let nome of listaDeNomes){
+        let mascOuFem = prompt(`${nome} é Masculino (m) ou Feminino (f) ?`);
+        (mascOuFem == "m")? masc.push(nome):(mascOuFem == "f")?fem.push(nome):alert("Erro, insira um gênero válido");
     }
-
+    
     //SAÍDA
+    document.write(`Masculinos: ${masc.join(", ")} </br>Femininos: ${fem.join(", ")}`);
 
 </script>
