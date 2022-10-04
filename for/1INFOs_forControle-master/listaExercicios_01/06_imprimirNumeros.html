@@ -6,11 +6,20 @@
     */
 
     //ENTRADA
-
-
+    const numInicial = parseInt(prompt("Informe o valor inicial: "))
+    const numFinal = parseInt(prompt("Informe o valor final: "))
+    let pares = []
+    let impares = []
     //PROCESSAMENTO
-
+    if(numInicial > numFinal || numInicial == numFinal){
+        document.write("<strong> ERRO! O valor inicial é igual ou maior ao valor final.</strong>")
+    }else{
+        for (let index = numInicial; index <= numFinal; index++) {
+            (index % 2 == 0)? pares.push(index): impares.push(index)
+            
+        }
+    }
 
     //SAÍDA
-
+    document.write(`Impares: ${impares}</br>Pares: ${pares}`)
 </script>

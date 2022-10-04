@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
-
+    let divisor = 0
+    const numero = parseInt(prompt("infome um valor:"))
 
     //PROCESSAMENTO
+    for (let index = 0; index <= numero; index++) {
+        if (numero % index == 0) divisor++
+    }
+    (divisor == 2) ? document.write(`O número ${numero} é primo.`) : document.write(`O número ${numero} não é primo.`)
 
 
     //SAÍDA
+    document.write(`Numeros primos: ${numPrimos}</br>Numeros não primos: ${resto}`)
 
 </script>
