@@ -7,16 +7,16 @@
 
     //ENTRADA
     let numeros = [];
+    let soma = null
     for (let index = 0; index < 5; index++) {
         numeros.push(Number(prompt("Informe um número:")));
     }
-    let soma = 0
     //PROCESSAMENTO
-    for (let index = 0; index <= numeros.length; index++) {
+    for (let index = 0; index <= numeros.length - 1; index++) {
         soma = soma + numeros[index]
         
     }
-    const media = soma / numeros.length
+    let media = soma / numeros.length
     //SAÍDA
     document.write(`A soma dos números é: ${soma}</br>A media é: ${media }`)
 </script>

@@ -6,10 +6,14 @@
     */
 
     //ENTRADA
-
-
+    const populacao = 50000
+    let crescimento = populacao
     //PROCESSAMENTO
-
+    for (let index = 0; index <= 10; index++) {
+        if(index == 5) document.write(`Em 5 anos a pupolação será de ${Math.floor(crescimento)} habitantes</br>`)
+        if(index == 10) document.write(`Em 10 anos a pupolação será de ${Math.floor(crescimento)} habitantes`)
+        crescimento = crescimento * 1.015
+    }
 
     //SAÍDA
 

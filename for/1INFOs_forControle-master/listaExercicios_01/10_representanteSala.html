@@ -8,11 +8,25 @@
     */
 
     //ENTRADA
-
-
+    let voto;
+    const rep1 = prompt(`Informe o nome de um candidato a representante:`);
+    const rep2 = prompt(`Informe o nome de um candidato a representante:`);
+    const rep3 = prompt(`Informe o nome de um candidato a representante:`);
+    const qtdVotantes = parseInt(prompt("Informe quantos alunos irão votar:"));
+    let rep1votos = 0;
+    let rep2votos = 0;
+    let rep3votos = 0;
     //PROCESSAMENTO
-
-
+    for (let contador = 1; contador <= qtdVotantes; contador++) {
+        voto = prompt(`Pra quem será o voto?${rep1}, ${rep2} ou  ${rep3})`);
+        if (voto == rep1)rep1votos++;
+        if (voto == rep2)rep2votos++;
+        if (voto == rep3)rep3votos++;
+        
+    }
+    const rep1porcent = (rep1votos / qtdVotantes) * 100;
+    const rep2porcent = (rep2votos / qtdVotantes) * 100;
+    const rep3porcent = (rep3votos / qtdVotantes) * 100;
     //SAÍDA
-
+    document.write(`Total de votos: ${qtdVotantes}</br>Votos de ${rep1}: ${rep1votos}</br>Procentagem: ${rep1porcent}% </br></br>Votos de ${rep2}: ${rep2votos}</br>Procentagem: ${rep2porcent}% </br></br>Votos de ${rep3}: ${rep3votos}</br>Procentagem: ${rep3porcent}%`);
 </script>
