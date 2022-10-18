@@ -1,0 +1,25 @@
+<script>
+    /*
+    PROBLEMA: Classificação do tipo do livro
+    Considere os nomes dos livros que compõem a lista abaixo.
+    let listaLivros = ["A Arte da Guerra", "Sistemas Inteligentes", "Introdução a Programação com JS", "1984", "Use a cabeça: JS"];
+    Usando a estrutura de repetição "for of", pergunte para o usuário se o livro é Técnico ou Ficção e separe-os em duas listas distintas.
+    Ao final, apresente a quantidade de livros técnicos e livros de romance qoe o leitor possui, assim como os livros que compõem a lista de livros técnicos e de livros de romance.
+    */
+
+    //ENTRADA
+    let listaLivros = ["A Arte da Guerra", "Sistemas Inteligentes", "Introdução a Programação com JS", "1984", "Use a cabeça: JS"];
+    let tecnico = []
+    let ficcao = []
+    let genero = ''
+    //PROCESSAMENTO
+    for(let livro of listaLivros){
+        genero = prompt(`${livro} é de um livro técnico(t) ou de ficção(f)?`)
+        if(genero.toLowerCase() == 't') tecnico.push(livro)
+        else if(genero.toLowerCase() == 'f') ficcao.push(livro)
+    }
+
+    //SAÍDA
+    document.write(`Livros de Ficção: ${ficcao.join(", ")}</br>Quantidade: ${ficcao.length}</br></br>Livros técnicos: ${tecnico.join(", ")}</br>Quantidade: ${tecnico.length}`)
+
+</script>
