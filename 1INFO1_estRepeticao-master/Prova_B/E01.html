@@ -1,0 +1,24 @@
+<script>
+    //Problema: Diário do Professor
+    /*
+    Faça um programa que pergunte ao Docente a quantidade de avaliações que realizou com o aluno João. Após, usando estrutura de repetição, peça para o Professor informar todas as notas.
+    O programa deverá verificar a média aritmética do aluno, considerando os dados que foram informados pelo Docente.
+    Ao final, apresente mensagem indicando se o aluno foi aprovado ou não, considerando que, para ser aprovado, deverá ter atingido média aritmética maior ou igual a 7.
+    */
+
+    //Entrada
+    const qtdprovas = parseInt(prompt("Informe a quantidade de provas aplicadas para o João."));
+    let soma = 0;
+    let status = "";
+    let media = 0;
+    //Processamento
+    for (let index = 0; index < qtdprovas; index++) {
+        let nota = Number(prompt("Informe a nota da prova."));
+        soma += nota;
+        media = soma/qtdprovas;
+        (media >= 7)? status="Aprovado": status="Reprovado";
+    }
+    //Saída
+    document.write(`Média: ${media}</br>Status: ${status}`);
+
+</script>

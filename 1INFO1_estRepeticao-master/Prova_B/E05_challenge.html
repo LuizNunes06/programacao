@@ -1,0 +1,20 @@
+<script>
+    //Problema
+    /*
+    Considere que um investidor pretende deixar seu dinheiro guardado durante um determinado período. Ele sabe o rendimento, que atualmente é de 1% ao mês, acrescerá 0,25% a cada ano que o dinheiro ficar investido.
+    Peça para o usuário informar a quantia inicial investida e quanto tempo pretende deixar guardado.
+    Apresente o valor final previsto que terá investido e a porcentagem que acresceu, comparado com a quantia inicial que foi investida.
+   */
+
+    const valorInicial = Number(prompt("Informe o valor do investimento."));
+    const tempo = parseInt(prompt("Informe em meses o tempo que o dinheiro será guardado"));
+    let valorfinal = valorInicial;
+
+    for (let index = 0; index < tempo; index++) {
+        valorfinal = valorfinal * 1.01;
+        if(index == 12) valorfinal == valorfinal * 1.0025;
+    }
+
+    document.write(`Valor final previsto: R$${valorfinal.toFixed(2)} </br>Valor acrescentado: R$${(valorfinal - valorInicial).toFixed(2)}`);
+</script>
+
